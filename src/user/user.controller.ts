@@ -13,7 +13,6 @@ import { AuthGuard } from '@nestjs/passport';
 import { LoginDto } from './dto/login.dto';
 import { User } from './entities/user.entity';
 import { UserService } from './user.service';
-import { Point } from '../point/entities/point.entity';
 
 @Controller('user')
 export class UserController {

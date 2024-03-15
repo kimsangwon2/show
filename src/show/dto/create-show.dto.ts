@@ -1,3 +1,5 @@
+import { Category } from '../types/showRole.type';
+
 export class CreateShowDto {
   name: string;
   info: string;
@@ -5,5 +7,6 @@ export class CreateShowDto {
   place: string;
   seatinfo: string;
   image: string;
-  category: string;
+  category: Category;
+  price: number;
 }

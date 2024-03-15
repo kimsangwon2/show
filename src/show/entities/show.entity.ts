@@ -32,7 +32,10 @@ export class Show {
   @Column({ type: 'varchar', select: false, nullable: false })
   image: string;
 
-  @Column({ type: 'enum', enum: Category, default: Category.musical })
+  @Column({ type: 'number', select: false, nullable: false })
+  price: number;
+
+  @Column({ type: 'enum', enum: Category })
   category: Category;
 
   @Column({ type: 'datetime' })

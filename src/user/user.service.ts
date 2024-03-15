@@ -15,6 +15,12 @@ import { Point } from '../point/entities/point.entity';
 
 @Injectable()
 export class UserService {
+  save(user: never) {
+    throw new Error('Method not implemented.');
+  }
+  findById(userId: number) {
+    throw new Error('Method not implemented.');
+  }
   constructor(
     @InjectRepository(User)
     private userRepository: Repository<User>,

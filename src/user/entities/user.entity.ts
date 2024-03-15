@@ -6,7 +6,6 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
-import { Role } from '../types/userRole.type';
 import { Point } from 'src/point/entities/point.entity';
 
 @Index('email', ['email'], { unique: true })
@@ -22,9 +21,6 @@ export class User {
 
   @Column({ type: 'varchar', select: false, nullable: false })
   password: string;
-
-  @Column({ type: 'enum', enum: Role, default: Role.User })
-  role: Role;
 
   @Column({ type: 'varchar', nullable: false })
   name: string;
